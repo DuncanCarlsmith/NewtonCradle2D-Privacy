@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Two-Dimensional Newton's Cradle</title>
+      <style>
+                * {
+                              margin: 0;
+                              padding: 0;
+                              box-sizing: border-box;
+                }
+
+                body {
+                              font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+                              background-color: #000000;
+                              color: #ffffff;
+                              line-height: 1.6;
+                              min-height: 100vh;
+                }
+
+                .hero {
+                              min-height: 100vh;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                              justify-content: center;
+                              padding: 60px 20px;
+                              text-align: center;
+                }
+
+                .app-icon {
+                              width: 80px;
+                              height: 80px;
+                              background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+                              border-radius: 18px;
+                              margin-bottom: 30px;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              font-size: 40px;
+                }
+
+                h1 {
+                              font-size: clamp(2rem, 5vw, 3.5rem);
+                              font-weight: 700;
+                              letter-spacing: -0.02em;
+                              margin-bottom: 20px;
+                }
+
+                .highlight {
+                              background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent;
+                              background-clip: text;
+                }
+
+                .phone-mockup {
+                              max-width: 300px;
+                              width: 100%;
+                              margin: 40px 0;
+                              border-radius: 20px;
+                              box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25);
+                }
+
+                .tagline {
+                              font-size: 1.25rem;
+                              color: #a1a1aa;
+                              max-width: 500px;
+                              margin-bottom: 40px;
+                }
+
+                .app-store-badge {
+                              display: inline-flex;
+                              flex-direction: column;
+                              align-items: center;
+                              padding: 12px 30px;
+                              border: 1px solid #3f3f46;
+                              border-radius: 12px;
+                              text-decoration: none;
+                              color: #ffffff;
+                              transition: all 0.3s ease;
+                }
+
+                .app-store-badge:hover {
+                              border-color: #3b82f6;
+                              background: rgba(59, 130, 246, 0.1);
+                }
+
+                .app-store-badge span {
+                              font-size: 0.75rem;
+                              color: #71717a;
+                }
+
+                .features {
+                              padding: 80px 20px;
+                              background: #0a0a0a;
+                }
+
+                .features-grid {
+                              max-width: 900px;
+                              margin: 0 auto;
+                              display: grid;
+                              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                              gap: 40px;
+                }
+
+                .feature {
+                              text-align: center;
+                              padding: 30px;
+                }
+
+                .feature-icon {
+                              font-size: 2.5rem;
+                              margin-bottom: 20px;
+                }
+
+                .feature h3 {
+                              font-size: 1.25rem;
+                              margin-bottom: 10px;
+                }
+
+                .feature p {
+                              color: #71717a;
+                              font-size: 0.95rem;
+                }
+
+                .author {
+                              padding: 60px 20px;
+                              text-align: center;
+                              color: #52525b;
+                              font-size: 0.95rem;
+                }
+
+                footer {
+                              padding: 30px 20px;
+                              text-align: center;
+                              border-top: 1px solid #1a1a1a;
+                }
+
+                footer a {
+                              color: #52525b;
+                              text-decoration: none;
+                              font-size: 0.85rem;
+                              margin: 0 15px;
+                }
+
+                footer a:hover {
+                              color: #a1a1aa;
+                }
+
+                @media (max-width: 480px) {
+                              .phone-mockup {
+                                                max-width: 240px;
+                              }
+
+                              .features-grid {
+                                                gap: 30px;
+                              }
+                }
+            </style>
+  </head>
+  <body>
+        <main class="hero">
+                  <div class="app-icon"></div>div>
+
+                  <h1>Newton's Cradle, <span class="highlight">Unbound</span>span></h1>
+                
+                <img src="NewtonCradle2DiOSAppSimulator.jpg" alt="2D Newton's Cradle app running on iPhone" class="phone-mockup">
+                
+                <p class="tagline">
+                    A two-dimensional reimagining of the classic desktop toy. 
+                    Watch momentum and energy transfer in ways Newton never imagined.
+                </p>p>
+                
+                <a href="#" class="app-store-badge">
+                            <span>Coming Soon on the</span>
+                            App Store
+                </a>a>
+        </main>main>
+      
+      <section class="features">
+              <div class="features-grid">
+                          <div class="feature">
+                                          <div class="feature-icon">Drag</div>div>
+                                          <h3>Drag. Release. Discover.</h3>
+                                          <p>Intuitive touch controls let you set up collisions with a flick of your finger.</p>
+                          </div>div>
+                          <div class="feature">
+                                          <div class="feature-icon">Tune</div>div>
+                                          <h3>Real Physics Parameters</h3>
+                                          <p>Adjust gravity, restitution, string length, and ball size. See how each affects the system.</p>
+                          </div>div>
+                          <div class="feature">
+                                          <div class="feature-icon">Watch</div>div>
+                                          <h3>Energy Conservation</h3>
+                                          <p>Watch total energy in real-time. Set restitution to 1.0 for perfectly elastic collisions.</p>
+                          </div>div>
+              </div>div>
+      </section>section>
+      
+      <section class="author">
+              <p>
+                            Built by a physics professor.<br>
+                            No tracking. No ads. Just physics.
+              </p>
+      </section>section>
+
+        <footer>
+                  <a href="privacy.html">Privacy Policy</a>a>
+                  <a href="mailto:duncancarlsmith@gmail.com">Contact</a>a>
+        </footer>
+  </body>
+</html>html>
+        </footer>
+              </p></p></span></h1>
+  </body>
+      </style></title>
+  </head>
